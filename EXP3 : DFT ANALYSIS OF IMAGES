@@ -1,0 +1,31 @@
+clc;
+clear;
+close all;
+
+% Create the first image (A)
+A = zeros(256);
+A(100:150, 100:150) = 255; % Create a white square
+figure;
+subplot(3,2,1), imshow(A, []), title('First Image');
+
+% Create the second image (B)
+B = ones(256);
+B(120:200, 120:200) = 0; % Create a black square
+subplot(3,2,2), imshow(B, []), title('Second Image');
+
+% Convolution in spatial domain
+C = conv2(A, B, 'same');
+subplot(3,2,5), imshow(C, []), title('Convolution in Spatial Domain');
+
+% Fourier transform of both images
+A1 = fft2(A);
+B1 = fft2(B);
+
+% Multiply in frequency domain
+C1 = A1 .* B1;
+D = fftshift(ifft2(C1)); % Convert back to spatial domain
+
+% Display results
+subplot(3,2,3), imshow(log(abs(A1)+1), []), title('DFT of First Image');
+subplot(3,2,4), imshow(log(abs(B1)+1), []), title('DFT of Second Image');
+subplot(3,2,6), imshow(abs(D), []), title('Multiplication in Frequency Domain');
