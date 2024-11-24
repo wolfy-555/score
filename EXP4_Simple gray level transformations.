@@ -1,0 +1,28 @@
+clc;
+clear;
+close all;
+
+% Load the image
+I = imread('path_to_your_image'); % Replace with the actual path to your image
+
+% Display the original image
+figure;
+subplot(2,2,1), imshow(I), title('Original Image');
+
+% Negative transformation
+J = 255 - I;
+subplot(2,2,2), imshow(J), title('Negative Image');
+
+% Gamma correction
+Gamma = 0.75;
+K = uint8(255 * ((double(I) / 255) .^ Gamma));
+subplot(2,2,3), imshow(K), title(['Gamma Correction (\gamma = ' num2str(Gamma) ')']);
+
+% Contrast stretching
+X = imadjust(I, [100/255 200/255], [0 1]);
+subplot(2,2,4), imshow(X), title('Contrast Stretching (100-200)');
+
+% Histogram comparison
+figure;
+subplot(1,2,1), imhist(I), title('Histogram: Original Image');
+subplot(1,2,2), imhist(X), title('Histogram: Contrast Stretching');
