@@ -1,0 +1,28 @@
+clc;
+clear;
+close all;
+
+% Load the image
+I = imread('path_to_your_image'); % Replace with your image path
+
+% Display original image and histogram
+figure;
+subplot(2,2,1), imshow(I), title('Original Image');
+subplot(2,2,2), imhist(I), title('Histogram of Original Image');
+
+% Histogram Equalization
+J = histeq(I);
+subplot(2,2,3), imshow(J), title('Equalized Image');
+subplot(2,2,4), imhist(J), title('Histogram of Equalized Image');
+
+% Equalization Iteration 2
+K = histeq(J);
+% Equalization Iteration 3
+L = histeq(K);
+
+% Display Iterations 2 and 3 in the same figure
+figure;
+subplot(2,2,1), imshow(K), title('Equalization Iteration 2');
+subplot(2,2,2), imhist(K), title('Histogram of Iteration 2');
+subplot(2,2,3), imshow(L), title('Equalization Iteration 3');
+subplot(2,2,4), imhist(L), title('Histogram of Iteration 3');
