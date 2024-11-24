@@ -1,0 +1,23 @@
+clc;
+close all;
+clear all;
+
+I = imread("EXP1/download.jpg");
+subplot(2,2,1);
+imshow(I);
+title('Original Image');
+
+J = 0.3.*I(:,:,1) + 0.59.*I(:,:,2) + 0.11.*I(:,:,3) ;
+subplot(2,2,2);
+imshow(J);
+title("  by Formula");
+
+K = rgb2gray(I);
+subplot(2,2,3);
+imshow(K);
+title('Using rgb2gray function');
+
+B = im2bw(I);
+subplot(2,2,4);
+imshow(B);
+title('Binary Image');
