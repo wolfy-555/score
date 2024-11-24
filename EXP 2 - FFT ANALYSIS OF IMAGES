@@ -1,0 +1,23 @@
+clc;
+close all;
+clear all;
+
+image = imread("/MATLAB Drive/Image Processing Project/EXP1/download.jpg");
+grey_image = rgb2gray(image);
+subplot(2,2,1);
+imshow(grey_image);
+title("GreyImage");
+
+f_trans = fft2(grey_image);
+
+f_spectrum = abs(f_trans);
+f_spectrum =log(f_spectrum +1);
+subplot(2, 2, 2);
+imshow(f_spectrum,[]);
+title('Fourier Spectrum');
+
+reconstructed_image = ifft2(f_trans);
+subplot(2, 2, 3);
+imshow(abs(reconstructed_image), []);
+title('Reconstructed Image');
+axis off;
