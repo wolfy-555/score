@@ -1,0 +1,60 @@
+clc;
+close all;
+clear all;
+
+% Load the image
+I = imread('download.jpg');
+
+% Display the original image
+figure(1);
+subplot(2,2,1);
+imshow(I);
+title('Original Image');
+
+% Apply and display Standard Average Smoothing
+I_avg = imgaussfilt(I, 1); % Gaussian smoothing can replace average filter
+subplot(2,2,2);
+imshow(I_avg);
+title('Standard Average Smoothing');
+
+% Apply and display Weighted Average Smoothing
+H_weighted = fspecial('gaussian', [3, 3], 1);
+I_weighted = imfilter(I, H_weighted, 'replicate');
+subplot(2,2,3);
+imshow(I_weighted);
+title('Weighted Average Smoothing');
+
+% Apply and display Disk Blurring
+H_disk = fspecial('disk', 5);
+I_disk = imfilter(I, H_disk, 'replicate');
+subplot(2,2,4);
+imshow(I_disk);
+title('Blurred Image');
+
+% Sharpening and Edge Detection
+figure(2);
+subplot(2,2,1);
+imshow(I);
+title('Original Image');
+
+% Laplacian filter
+H_laplacian = fspecial('laplacian', 0.2);
+P = imfilter(I, H_laplacian, 'replicate');
+subplot(2,2,2);
+imshow(P);
+title('Laplacian Filter Output');
+
+% Sharpened Image using Laplacian
+I_sharpened = I + P;
+subplot(2,2,3);
+imshow(I_sharpened);
+title('Sharpened Image (Laplacian)');
+
+% Unsharp Mask
+H = fspecial('unsharp');
+sharpened = imfilter(I,H,'replicate');
+subplot(2,2,4);
+imshow(sharpened);
+title('Sharpened Image by Unsharp Filter');
+
+---------------------------------------------------------------------------------------
