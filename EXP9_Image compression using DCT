@@ -2,7 +2,7 @@ clc;
 close all;
 clear all;
  
-I = imread(/MATLAB Drive/aditya.jpeg);
+I = imread("your Image");
 I = rgb2gray(I); 
 figure(1);
  
