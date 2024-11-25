@@ -1,0 +1,87 @@
+clc;
+close all;
+clear all;
+
+% For Grayscale Image
+bw = imread('download.jpg'); % Read grayscale image
+figure(1);
+
+% Display Original Image
+subplot(2,3,1);
+imshow(bw);
+title('Original Image');
+
+% Define Structure Element
+se = strel('square', 3);
+
+% Dilation
+bw_dilated = imdilate(bw, se);
+subplot(2,3,2);
+imshow(bw_dilated);
+title('Dilated');
+
+% Erosion
+bw_eroded = imerode(bw, se);
+subplot(2,3,3);
+imshow(bw_eroded);
+title('Eroded');
+
+% Opening
+bw_opened = imopen(bw, se);
+subplot(2,3,4);
+imshow(bw_opened);
+title('Opened');
+
+% Closing
+bw_closed = imclose(bw, se);
+subplot(2,3,5);
+imshow(bw_closed);
+title('Closed');
+
+% Edge Extraction
+bw_edge = bw - bw_eroded;
+subplot(2,3,6);
+imshow(bw_edge);
+title('Edge Extraction');
+
+% For Binary Image
+bw_binary = imread('text.png'); % Read binary image
+figure(2);
+
+% Display Original Image
+subplot(2,3,1);
+imshow(bw_binary);
+title('Original Image');
+
+% Define Structure Element
+se = strel('square', 3);
+
+% Dilation
+bw_dilated_binary = imdilate(bw_binary, se);
+subplot(2,3,2);
+imshow(bw_dilated_binary);
+title('Dilated');
+
+% Erosion
+bw_eroded_binary = imerode(bw_binary, se);
+subplot(2,3,3);
+imshow(bw_eroded_binary);
+title('Eroded');
+
+% Opening
+bw_opened_binary = imopen(bw_binary, se);
+subplot(2,3,4);
+imshow(bw_opened_binary);
+title('Opened');
+
+% Closing
+bw_closed_binary = imclose(bw_binary, se);
+subplot(2,3,5);
+imshow(bw_closed_binary);
+title('Closed');
+
+% Edge Extraction
+bw_edge_binary = bw_binary - bw_eroded_binary;
+subplot(2,3,6);
+imshow(bw_edge_binary);
+title('Edge Extraction');
