@@ -39,7 +39,7 @@ Key points:
 Key points regarding transformations inspired by the human eye:
 1. The human eye perceives brightness logarithmically, meaning we are more sensitive to changes in dark regions than bright regions.
 2. **Logarithmic Transformation**: Enhances lower-intensity pixel values while suppressing higher intensities.
-3. **Power-Law Transformation**: Adjusts contrast sensitivity; for instance, \(\text{S} = \text{c} \times \text{r}^{\gamma}\), where \(\gamma < 1\) darkens, and \(\gamma > 1\) brightens.
+3. **Power-Law Transformation**: Adjusts contrast sensitivity; for instance,S=CxR^gamma , where if gamma<1 darkens and gamma>1 brightens.
 4. The eye's sensitivity to edges is mimicked in edge-detection algorithms like Sobel and Canny.
 5. Brightness adaptation helps humans see across varying light conditions; image processing mimics this using histogram equalization.
 6. Rods and cones in the retina determine color perception, replicated using RGB or HSV models in DIP.
