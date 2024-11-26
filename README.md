@@ -89,18 +89,6 @@ Key points regarding transformations inspired by the human eye:
 ## 5. **Spatial Domain - Euclidean Distance, Chessboard, City Block with Examples**
 
 ### Metrics:
-1. **Euclidean Distance**:
-   - Formula: \(d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}\)
-   - Example: Between (2, 3) and (5, 7): \(d = 5\).
-
-2. **Chessboard Distance**:
-   - Formula: \(d = \max(|x_2 - x_1|, |y_2 - y_1|)\)
-   - Example: Between (2, 3) and (5, 7): \(d = 4\).
-
-3. **City Block Distance**:
-   - Formula: \(d = |x_2 - x_1| + |y_2 - y_1|\)
-   - Example: Between (2, 3) and (5, 7): \(d = 7\).
-  
 ![Alt text](https://github.com/wolfy-555/score/blob/main/metrices.PNG "a title")
 
 Applications include clustering, pathfinding, and morphological operations.
