@@ -1,7 +1,7 @@
 clc;
 close all;
 clear all;
-I = imread(/MATLAB Drive/aditya.jpeg);
+I = imread(path);
 figure(1);
 subplot(2,2,1);
 imshow(I);
