@@ -100,6 +100,8 @@ Key points regarding transformations inspired by the human eye:
 3. **City Block Distance**:
    - Formula: \(d = |x_2 - x_1| + |y_2 - y_1|\)
    - Example: Between (2, 3) and (5, 7): \(d = 7\).
+  
+![Alt text](https://github.com/wolfy-555/score/blob/main/metrices.PNG "a title")
 
 Applications include clustering, pathfinding, and morphological operations.
 
