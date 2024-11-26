@@ -3,7 +3,7 @@ clear;
 close all;
 
 % Load the image
-I = imread('/MATLAB Drive/Image Processing Project/EXP1/download.jpg'); % Replace with your image path
+I = imread('path'); % Replace with your image path
 
 % Histogram Equalization
 J = histeq(I);
