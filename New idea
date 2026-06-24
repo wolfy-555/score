@@ -1,0 +1,315 @@
+Social Stock Market - Product Concept
+
+Overview
+
+Social Stock Market is a social platform where every user is both a content creator and a publicly traded asset.
+
+Instead of traditional likes and followers, users can invest virtual credits into other users they believe will become more popular. A user's value is determined by the market's confidence in them and the quality of the content they create.
+
+The platform combines elements of social media, investing, prediction markets, and competition into a single experience.
+
+The goal is to create two distinct ways to participate:
+
+1. Creator Path – Create engaging content and increase your market value.
+2. Investor Path – Discover promising creators before others and profit from their growth.
+
+---
+
+Core Features
+
+User Accounts
+
+Each user has:
+
+- Profile
+- Portfolio
+- Market Cap
+- Share Price
+- Creator Rank
+- Investor Rank
+
+Users can create:
+
+- Text posts
+- Image posts
+- Comments
+
+All content appears on a single global feed.
+
+---
+
+User Stock System
+
+Every user is treated as a publicly traded entity.
+
+Initial Setup
+
+Upon joining:
+
+- Total Shares: 1000
+- Public Float: 200 Shares
+- Locked Shares: 800 Shares
+
+All users start with identical stock structures to ensure fairness.
+
+The public float represents the shares available for trading.
+
+Locked shares represent the creator's ownership and contribute to their net worth but cannot be traded.
+
+---
+
+Seasons
+
+The platform operates in weekly seasons.
+
+Season Duration
+
+- Starts every Monday
+- Ends every Sunday
+
+At the beginning of every season:
+
+- Every user receives 1000 investment credits
+- All portfolios reset
+- All cash balances reset
+- Share ownership resets
+
+Persistent data:
+
+- User profiles
+- Historical performance
+- Creator badges
+- Investor badges
+- Season wins
+
+This prevents inflation and allows new users to compete fairly.
+
+---
+
+Investment Credits
+
+Investment credits are the platform's virtual currency.
+
+Credits cannot be purchased with real money.
+
+Credits can only be used to:
+
+- Buy shares
+- Sell shares
+- Build a portfolio
+
+Credits are reset at the start of every season.
+
+---
+
+Market Mechanics
+
+Users can buy and sell shares of other users.
+
+Example:
+
+Aditya Stock
+
+- Share Price: 10
+- Public Float: 200
+
+Rohit buys 20 shares.
+
+If Aditya begins creating highly engaging content and demand increases, the share price rises.
+
+Example:
+
+- Initial Price: 10
+- New Price: 25
+
+Rohit's investment gains value because he invested early.
+
+---
+
+User Valuation
+
+Each user has:
+
+Share Price
+
+Current market value of one share.
+
+Market Cap
+
+Market Cap = Share Price × Total Shares
+
+Example:
+
+- Total Shares = 1000
+- Share Price = 50
+
+Market Cap = 50,000
+
+Market Cap is used for creator rankings.
+
+---
+
+Creator Rankings
+
+Creator rankings measure content performance and market value.
+
+Example:
+
+Top Creators
+
+1. Aditya — Market Cap 50,000
+2. Rohit — Market Cap 42,000
+3. Aryan — Market Cap 37,000
+
+Creators compete to become the highest-valued user on the platform.
+
+---
+
+Investor Rankings
+
+Investor rankings measure investment performance.
+
+Metrics:
+
+- Portfolio Value
+- Return on Investment (ROI)
+- Average Return
+
+Example:
+
+Top Investors
+
+1. Rohit — ROI +320%
+2. Aryan — ROI +280%
+3. Aditya — ROI +240%
+
+This allows users who do not post frequently to remain competitive through investing.
+
+---
+
+Feed System
+
+The feed contains:
+
+- Text posts
+- Images
+- Comments
+
+Users browse content as they would on a traditional social platform.
+
+However, every post also acts as a signal to investors.
+
+Investors evaluate content quality to determine whether the creator's stock is likely to increase in value.
+
+---
+
+Investment Strategy
+
+Investors attempt to identify creators before they become popular.
+
+Example:
+
+Aditya's stock price = 5
+
+An investor believes Aditya will post valuable content and buys shares early.
+
+A week later:
+
+Aditya's stock price = 25
+
+The investor earns a significant return.
+
+This creates a "discover talent early" gameplay loop.
+
+---
+
+Portfolio System
+
+Every user has a portfolio.
+
+Example:
+
+Portfolio
+
+- 40% Aditya
+- 25% Rohit
+- 20% Aryan
+- 15% Cash
+
+Users can monitor:
+
+- Portfolio value
+- Gains and losses
+- Best performing investments
+- Season performance
+
+The portfolio becomes one of the platform's primary engagement drivers.
+
+---
+
+Activity Loop
+
+Creator Loop
+
+1. Create content
+2. Receive engagement
+3. Increase market confidence
+4. Increase stock value
+5. Climb creator leaderboard
+
+Investor Loop
+
+1. Discover creators
+2. Buy shares
+3. Monitor performance
+4. Profit from growth
+5. Climb investor leaderboard
+
+---
+
+Rewards
+
+The platform does not use real money.
+
+Rewards are based on:
+
+- Status
+- Rankings
+- Badges
+- Season victories
+- Historical records
+
+Example Badges:
+
+- Creator of the Week
+- Investor of the Week
+- Highest ROI
+- Fastest Growing Creator
+- Early Adopter
+- Market Legend
+
+---
+
+Fairness Rules
+
+To prevent manipulation:
+
+- All users start with identical share structures
+- No real-money transactions
+- Weekly portfolio resets
+- No permanent wealth accumulation
+- Separate creator and investor leaderboards
+
+This ensures that both creators and investors have meaningful ways to compete.
+
+---
+
+Vision
+
+The platform aims to answer a simple question:
+
+"If your friends were publicly traded companies, who would you invest in?"
+
+By turning social reputation into a virtual market, the platform creates a unique experience where content creation, prediction, competition, and community interaction all influence one another.
+
+Success is not determined solely by posting frequently. Users can win by becoming exceptional creators, exceptional investors, or both.
